@@ -1,8 +1,8 @@
 let homeScoreCard = document.getElementById("home-score-card")
-let guestScoreCard = document.getElementById("guest-score-card")
+let awayScoreCard = document.getElementById("away-score-card")
 
 let homeScore = 0
-let guestScore = 0
+let awayScore = 0
 
 function addHomeScoreBy1() {
     homeScore += 1
@@ -19,24 +19,24 @@ function addHomeScoreBy3() {
     homeScoreCard.textContent = homeScore
 }
 
-function addGuestScoreBy1() {
-    guestScore += 1
-    guestScoreCard.textContent = guestScore
+function addAwayScoreBy1() {
+    awayScore += 1
+    awayScoreCard.textContent = awayScore
 }
 
-function addGuestScoreBy2() {
-    guestScore += 2
-    guestScoreCard.textContent = guestScore
+function addAwayScoreBy2() {
+    awayScore += 2
+    awayScoreCard.textContent = awayScore
 }
 
-function addGuestScoreBy3() {
-    guestScore += 3
-    guestScoreCard.textContent = guestScore
+function addAwayScoreBy3() {
+    awayScore += 3
+    awayScoreCard.textContent = awayScore
 }
 
 function resetScore() {
     homeScore = 0
-    guestScore = 0
+    awayScore = 0
     homeScoreCard.textContent = homeScore
-    guestScoreCard.textContent = homeScore
+    awayScoreCard.textContent = awayScore
 }
